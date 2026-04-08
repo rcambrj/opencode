@@ -1,0 +1,107 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "websearch": "ask",
+    "webfetch": "ask",
+    "bash": {
+      "*": "ask",
+      "cat *": "allow",
+      "echo *": "allow",
+      "file *": "allow",
+      "find *": "deny",
+      "git status *": "allow",
+      "git diff *": "allow",
+      "git log *": "allow",
+      "git show *": "allow",
+      "grep *": "allow",
+      "head *": "allow",
+      "jq *": "allow",
+      "kubectl get *": "allow",
+      "kubectl logs *": "allow",
+      "ls *": "allow",
+      "rg *": "allow",
+      "otool *": "allow",
+      "sort *": "allow",
+      "strings *": "allow",
+      "tail *": "allow",
+      "tar *": "allow",
+      "wc *": "allow",
+      "which *": "allow"
+    }
+  },
+  "model": "ollama/qwen3.5:cloud",
+  "default_agent": "plan",
+  "enabled_providers": [
+    "ollama",
+    "lmstudio",
+    "apple-intelligence"
+  ],
+  "provider": {
+    "ollama": {
+      "name": "Ollama",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      },
+      "models": {
+        "qwen3.5:cloud": {
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          },
+          "name": "qwen3.5:cloud",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "qwen3.5": {
+          "name": "qwen3.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    },
+    "lmstudio": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LM Studio",
+      "options": {
+        "baseURL": "http://127.0.0.1:1234/v1"
+      },
+      "models": {
+        "qwen3.5-4b-mlx": {
+          "name": "qwen3.5-4b-mlx",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        },
+        "qwen3.5-9b-mlx": {
+          "name": "qwen3.5-9b-mlx",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    },
+    "apple-intelligence": {
+      "name": "Apple Intelligence",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:11435/v1"
+      },
+      "models": {
+        "apple-foundationmodel": {
+          "name": "apple-foundationmodel",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          }
+        }
+      }
+    }
+  }
+}
