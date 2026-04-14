@@ -72,150 +72,10 @@
           }
         },
 
-        "cogito-2.1:671b-cloud": {
-          "name": "cogito-2.1:671b-cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "deepseek-v3.2:cloud": {
-          "name": "deepseek-v3.2:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "devstral-2:123b-cloud": {
-          "name": "devstral-2:123b-cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "devstral-small-2:24b-cloud": {
-          "name": "devstral-small-2:24b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "gemma4:31b-cloud": {
-          "name": "gemma4:31b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "gemini-3-flash-preview:cloud": {
-          "name": "gemini-3-flash-preview:cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "glm-4.7:cloud": {
-          "name": "glm-4.7:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "glm-5:cloud": {
-          "name": "glm-5:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
         "glm-5.1:cloud": {
           "name": "glm-5.1:cloud",
           "modalities": {
             "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "kimi-k2.5:cloud": {
-          "name": "kimi-k2.5:cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "minimax-m2:cloud": {
-          "name": "minimax-m2:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "minimax-m2.5:cloud": {
-          "name": "minimax-m2.5:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "minimax-m2.7:cloud": {
-          "name": "minimax-m2.7:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "ministral-3:3b-cloud": {
-          "name": "ministral-3:3b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "ministral-3:8b-cloud": {
-          "name": "ministral-3:8b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "ministral-3:14b-cloud": {
-          "name": "ministral-3:14b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-        "nemotron-3-nano:30b-cloud": {
-          "name": "nemotron-3-nano:30b-cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "nemotron-3-super:cloud": {
-          "name": "nemotron-3-super:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "qwen3-coder-next:cloud": {
-          "name": "qwen3-coder-next:cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "qwen3-next:80b-cloud": {
-          "name": "qwen3-next:80b-cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "qwen3.5:cloud": {
-          "name": "qwen3.5:cloud",
-          "modalities": {
-            "input": ["text", "image"],
             "output": ["text"]
           }
         },
@@ -226,13 +86,6 @@
             "output": ["text"]
           }
         },
-        "rnj-1:8b-cloud": {
-          "name": "rnj-1:8b-cloud",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        }
       }
     },
     "lm-studio": {
