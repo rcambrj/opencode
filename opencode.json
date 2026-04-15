@@ -49,6 +49,7 @@
     }
   },
   "model": "ollama/glm-5.1:cloud",
+  // "model": "opencode-go/glm-5.1",
   "default_agent": "plan",
   "enabled_providers": [
     "ollama",
@@ -78,14 +79,7 @@
             "input": ["text"],
             "output": ["text"]
           }
-        },
-        "qwen3.5:397b-cloud": {
-          "name": "qwen3.5:397b-cloud",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
+        }
       }
     },
     "lm-studio": {
