@@ -78,6 +78,11 @@
           "modalities": {
             "input": ["text"],
             "output": ["text"]
+          },
+          "cost": {
+            // openrouter price, to get a feel
+            "input": 1.40,
+            "output": 4.40
           }
         }
       }
@@ -98,5 +103,9 @@
         }
       }
     }
-  }
+  },
+  "plugin": [
+    // gitignore opencode-notifier-state.json
+    "@mohak34/opencode-notifier@latest"
+  ]
 }
