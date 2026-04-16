@@ -84,6 +84,20 @@
             "input": 1.40,
             "output": 4.40
           }
+        },
+
+        // keep this for the image input
+        "qwen3.5:397b-cloud": {
+          "name": "qwen3.5:397b-cloud",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "cost": {
+            // openrouter price, to get a feel
+            "input": 1.40,
+            "output": 4.40
+          }
         }
       }
     },
