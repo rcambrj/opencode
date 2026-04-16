@@ -3,6 +3,7 @@
   "permission": {
     "websearch": "ask",
     "webfetch": "ask",
+    "question": "deny", // questions take over the UI in opencode
     "bash": {
       "*": "ask",
 
@@ -45,11 +46,13 @@
       "jq *": "ask", // shell()
       "tar *": "ask", // --to-command or --use-compress-program
 
-      "find *": "deny" // -exec (and can be done other ways)
+      "awk *": "deny", // system()
+      "find *": "deny" // -exec
     }
   },
-  "model": "ollama/glm-5.1:cloud",
+  // "model": "ollama/glm-5.1:cloud",
   // "model": "opencode-go/glm-5.1",
+  "model": "opencode-go/qwen3.5-plus",
   "default_agent": "plan",
   "enabled_providers": [
     "ollama",
@@ -65,38 +68,18 @@
         "baseURL": "http://127.0.0.1:11434/v1"
       },
       "models": {
-        "gemma4:e4b": {
-          "name": "gemma4:e4b",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        },
-
         "glm-5.1:cloud": {
-          "name": "glm-5.1:cloud",
+          "name": "GLM-5.1",
           "modalities": {
             "input": ["text"],
             "output": ["text"]
-          },
-          "cost": {
-            // openrouter price, to get a feel
-            "input": 1.40,
-            "output": 4.40
           }
         },
-
-        // keep this for the image input
         "qwen3.5:397b-cloud": {
-          "name": "qwen3.5:397b-cloud",
+          "name": "qwen3.5:397b",
           "modalities": {
             "input": ["text", "image"],
             "output": ["text"]
-          },
-          "cost": {
-            // openrouter price, to get a feel
-            "input": 1.40,
-            "output": 4.40
           }
         }
       }
@@ -109,7 +92,7 @@
       },
       "models": {
         "qwen3.5-4b-mlx": {
-          "name": "qwen3.5-4b-mlx",
+          "name": "qwen3.5-4b-mlx (local)",
           "modalities": {
             "input": ["text", "image"],
             "output": ["text"]

@@ -1,7 +1,7 @@
 * NEVER use sudo or root
 * ALWAYS use `webfetch`, NEVER use bash commands, when fetching URLs or web content
 * You're encouraged to use the `websearch` tool when your information may be outdated
-* ALWAYS use the `question` tool when asking the user questions
+* NEVER use the `question` tool, instead ask questions in the textual response
 * ALWAYS use the `read`, `glob`, `list` tools when reading files
 * ALWAYS use the `edit`, `write`, `apply_patch`, `multiedit` tools when writing, moving, copying, deleting files
 * NEVER use `find`, `touch`, `echo >`, `cat >` bash commands
