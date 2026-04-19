@@ -21,3 +21,4 @@
 * ALWAYS use `--prune` when running `git fetch`
 * ALWAYS regenerate the lockfile after changing the dependencies declaration, eg. run `pnpm install` after changing `package.json`
 * NEVER run `cd` unnecessarily to the current working directory
+* ALWAYS convert github.com links to raw.githubusercontent.com
