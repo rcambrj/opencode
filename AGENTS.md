@@ -2,8 +2,9 @@
 * ALWAYS use `webfetch`, NEVER use bash commands, when fetching URLs or web content
 * You're encouraged to use the `websearch` tool when your information may be outdated
 * NEVER use the `question` tool, instead ask questions in the textual response
-* ALWAYS use the `read`, `glob`, `list` tools when reading files
+* ALWAYS use the `read`, `glob` tools when reading files
 * ALWAYS use the `edit`, `write`, `apply_patch`, `multiedit` tools when writing, moving, copying, deleting files
+* ALWAYS use `apply_patch` for existing files instead of `write`
 * NEVER use `find`, `touch`, `echo >`, `cat >` bash commands
 * The use of `mkdir`, `rm`, `mv`, `cp` bash commands is acceptable
 * ONLY access, read or write files outside of the current working directory if requested explicitly
@@ -19,3 +20,4 @@
 * ALWAYS use `jq` to parse JSON, never use python, node, perl or other scripting
 * ALWAYS use `--prune` when running `git fetch`
 * ALWAYS regenerate the lockfile after changing the dependencies declaration, eg. run `pnpm install` after changing `package.json`
+* NEVER run `cd` unnecessarily to the current working directory
