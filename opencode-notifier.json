@@ -1,4 +1,23 @@
 {
   "sound": false,
-  "bell": true
+  "notification": true,
+  "bell": false,
+  "command": { "enabled": false },
+
+  "showProjectName": true,
+  "showSessionTitle": true,
+  "showIcon": false,
+
+  "events": {
+    "permission": { "sound": false, "notification": true, "command": false, "bell": true },
+    "complete": { "sound": false, "notification": true, "command": false, "bell": true },
+    "subagent_complete": false,
+    "error": false,
+    "question": { "sound": false, "notification": true, "command": false, "bell": true },
+    "user_cancelled": false,
+    "plan_exit": { "sound": false, "notification": true, "command": false, "bell": true },
+    "session_started": false,
+    "user_message": false,
+    "client_connected": false
+  }
 }
