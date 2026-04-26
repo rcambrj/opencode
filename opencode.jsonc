@@ -2,8 +2,8 @@
   "$schema": "https://opencode.ai/config.json",
   "autoupdate": false,
   "permission": {
-    "websearch": "ask",
-    "webfetch": "ask",
+    "websearch": "allow",
+    "webfetch": "allow",
     "question": "deny", // questions take over the UI in opencode
     "bash": {
       "*": "ask",
@@ -53,42 +53,12 @@
   },
   "default_agent": "plan",
   "agent": {
-    "plan": {
-      "mode": "primary",
-      // "model": "openai/gpt-5.4"
-      // "model": "zai-coding-plan/glm-5.1"
-      "model": "chutes/zai-org/GLM-5.1-TEE"
-    },
-    "build": {
-      "mode": "primary",
-      // "model": "opencode-go/qwen3.5-plus"
-      "model": "opencode-go/minimax-m2.7"
-    }
+    // "plan": { "model": "openai/gpt-5.4" }, "build": { "model": "openai/gpt-5.4-mini" }
+    "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.4-mini" }
+    // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/minimax-m2.7" }
+    // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/qwen3.5-plus" }
   },
   "provider": {
-    "ollama": {
-      "name": "Ollama",
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://127.0.0.1:11434/v1"
-      },
-      "models": {
-        "glm-5.1:cloud": {
-          "name": "GLM-5.1",
-          "modalities": {
-            "input": ["text"],
-            "output": ["text"]
-          }
-        },
-        "qwen3.5:397b-cloud": {
-          "name": "qwen3.5:397b",
-          "modalities": {
-            "input": ["text", "image"],
-            "output": ["text"]
-          }
-        }
-      }
-    },
     "lm-studio": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "LM Studio",
