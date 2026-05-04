@@ -53,8 +53,9 @@
   },
   "default_agent": "plan",
   "agent": {
-    // "plan": { "model": "openai/gpt-5.4" }, "build": { "model": "openai/gpt-5.4-mini" }
-    "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.4-mini" }
+    // "plan": { "model": "openai/gpt-5.4" }, "build": { "model": "openai/gpt-5.3-codex" }
+    "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.3-codex" },
+    // "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.4-mini" }
     // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/minimax-m2.7" }
     // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/qwen3.5-plus" }
   },

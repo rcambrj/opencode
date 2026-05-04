@@ -9,13 +9,13 @@
   "showIcon": false,
 
   "events": {
-    "permission": { "sound": false, "notification": true, "command": false, "bell": true },
-    "complete": { "sound": false, "notification": true, "command": false, "bell": true },
+    "permission": { "sound": false, "notification": true, "command": false, "bell": false },
+    "complete": { "sound": false, "notification": true, "command": false, "bell": false },
     "subagent_complete": false,
     "error": false,
-    "question": { "sound": false, "notification": true, "command": false, "bell": true },
+    "question": { "sound": false, "notification": true, "command": false, "bell": false },
     "user_cancelled": false,
-    "plan_exit": { "sound": false, "notification": true, "command": false, "bell": true },
+    "plan_exit": { "sound": false, "notification": true, "command": false, "bell": false },
     "session_started": false,
     "user_message": false,
     "client_connected": false
