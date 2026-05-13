@@ -22,3 +22,4 @@
 * ALWAYS regenerate the lockfile after changing the dependencies declaration, eg. run `pnpm install` after changing `package.json`
 * NEVER run `cd` unnecessarily to the current working directory
 * ALWAYS convert github.com links to raw.githubusercontent.com
+* ALWAYS stage newly created files in git if they will be loaded by `nix`, `nix` will not load files which are not tracked by git. 

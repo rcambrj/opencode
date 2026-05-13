@@ -54,10 +54,7 @@
   "default_agent": "plan",
   "agent": {
     "plan": { "model": "openai/gpt-5.5" }, "build": { "model": "openai/gpt-5.5" }
-    // "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.3-codex" },
-    // "plan": { "model": "openai/gpt-5.3-codex" }, "build": { "model": "openai/gpt-5.4-mini" }
-    // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/minimax-m2.7" }
-    // "plan": { "model": "opencode-go/glm-5.1" }, "build": { "model": "opencode-go/qwen3.5-plus" }
+    // "plan": { "model": "opencode-go/deepseek-v4-pro" }, "build": { "model": "opencode-go/deepseek-v4-pro" }
   },
   "provider": {
     "lm-studio": {
@@ -79,6 +76,13 @@
   },
   "plugin": [
     // gitignore opencode-notifier-state.json
-    "@mohak34/opencode-notifier@latest"
-  ]
+    "@mohak34/opencode-notifier@latest",
+    "opencode-mystatus"
+  ],
+  "command": {
+    "gpt-status": {
+      "description": "Query quota usage for the OpenAI subscription",
+      "template": "Use the mystatus tool to query quota usage. Return the OpenAI as-is without modification. Do not return any other results or their errors"
+    }
+  }
 }
