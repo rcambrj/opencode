@@ -3,3 +3,4 @@ package.json
 bun.lock
 opencode-notifier-state.json
 opencode-go-usage.json
+.direnv
