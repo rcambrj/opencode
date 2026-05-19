@@ -78,5 +78,6 @@
   "plugin": [
     // gitignore opencode-notifier-state.json
     "@mohak34/opencode-notifier@latest",
+    "@khalilgharbaoui/opencode-claude-code-plugin"
   ]
 }
