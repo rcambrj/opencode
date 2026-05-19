@@ -78,11 +78,5 @@
   "plugin": [
     // gitignore opencode-notifier-state.json
     "@mohak34/opencode-notifier@latest",
-  ],
-  "command": {
-    "gpt-status": {
-      "description": "Query quota usage for the OpenAI subscription",
-      "template": "Use the mystatus tool to query quota usage. Return the OpenAI as-is without modification. Do not return any other results or their errors"
-    }
-  }
+  ]
 }
