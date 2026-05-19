@@ -23,3 +23,4 @@
 * NEVER run `cd` unnecessarily to the current working directory
 * ALWAYS convert github.com links to raw.githubusercontent.com
 * ALWAYS stage newly created files in git if they will be loaded by `nix`, `nix` will not load files which are not tracked by git. 
+* NEVER put parameters between `kubectl` and `get`; bad: `kubectl -n foo get`; good: `kubectl get -n foo`
