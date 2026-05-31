@@ -83,7 +83,7 @@ function formatDuration(seconds: number): string {
 function progressBar(remainingPercent: number): string {
   const safePercent = Math.max(0, Math.min(100, remainingPercent))
   const filled = Math.round((safePercent / 100) * BAR_WIDTH)
-  return `${"█".repeat(filled)}${"░".repeat(BAR_WIDTH - filled)}`
+  return `${"░".repeat(filled)}${" ".repeat(BAR_WIDTH - filled)}`
 }
 
 function formatFetchedAt(timestamp: number): string {
