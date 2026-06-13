@@ -5,6 +5,7 @@
     "websearch": "allow",
     "webfetch": "allow",
     "question": "deny", // questions take over the UI in opencode
+    "grep": "deny", // use rg or semble
     "bash": {
       "*": "ask",
 
@@ -43,6 +44,7 @@
       "uniq *": "allow",
       "wc *": "allow",
       "which *": "allow",
+      "semble *": "allow",
 
       "jq *": "ask", // shell()
       "tar *": "ask", // --to-command or --use-compress-program

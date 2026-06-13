@@ -13,7 +13,7 @@
 * NEVER git push --force or --force-with-lease
 * NEVER git push to the `main` branch
 * NEVER change any files in `.git`
-* Prefer `rg` (ripgrep) bash command over both `grep` bash command and `grep` tool
+* NEVER use the `grep` tool
 * NEVER commit secrets, credentials, API keys
 * NEVER commit build artifacts, cache or editor preferences
 * ALWAYS verify the presence, the parameters/input, the return/output, and behaviour/shape of any function, variable, property, attribute, executable, file, structure, etc. directly from the source or documentation before implementing further code or functionality which consumes it
@@ -24,3 +24,9 @@
 * ALWAYS convert github.com links to raw.githubusercontent.com
 * ALWAYS stage newly created files in git if they will be loaded by `nix`, `nix` will not load files which are not tracked by git. 
 * NEVER put parameters between `kubectl` and `get`; bad: `kubectl -n foo get`; good: `kubectl get -n foo`
+
+## Searching files and github repositories
+* DISREGARD OpenCode's "When searching for text or files, prefer using Glob and Grep tools"
+* ALWAYS use `semble` first. Usage: `semble search "authentication flow" ./my-project`. `--content` accepts `code` (default), `docs`, `config`, or `all`. `path` defaults to the current directory when omitted; git URLs are accepted.
+* ONLY use `rg` / `glob` when you need exhaustive literal matches or confirmation of an exact string
+* In doubt, use `semble` first, then `rg` / `glob` to further narrow the search
