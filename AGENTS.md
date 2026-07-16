@@ -1,8 +1,9 @@
+* ALWAYS be terse, don't restate context
 * NEVER use sudo or root
 * ALWAYS use `webfetch`, NEVER use bash commands, when fetching URLs or web content
 * You're encouraged to use the `websearch` tool when your information may be outdated
 * NEVER use the `question` tool, instead ask questions in the textual response
-* ALWAYS use the `read`, `glob` tools when reading files
+* ALWAYS use `semble` bash command and if necessary `read` and `glob` tools when reading files
 * ALWAYS use the `edit`, `write`, `apply_patch`, `multiedit` tools when writing, moving, copying, deleting files
 * ALWAYS use `apply_patch` for existing files instead of `write`
 * NEVER use `find`, `touch`, `echo >`, `cat >` bash commands
@@ -27,6 +28,10 @@
 
 ## Searching files and github repositories
 * DISREGARD OpenCode's "When searching for text or files, prefer using Glob and Grep tools"
-* ALWAYS use `semble` first. Usage: `semble search "authentication flow" ./my-project`. `--content` accepts `code` (default), `docs`, `config`, or `all`. `path` defaults to the current directory when omitted; git URLs are accepted.
-* ONLY use `rg` / `glob` when you need exhaustive literal matches or confirmation of an exact string
-* In doubt, use `semble` first, then `rg` / `glob` to further narrow the search
+* ALWAYS use `semble` first. Usage: `semble search "authentication flow" ./my-project --content all`.
+  * `path` defaults to the current directory when omitted
+* ALWAYS use `semble` with `--content all`, ordered after the search string and path
+* ALWAYS use `semble` to discover code within remote repositories on GitHub. Usage `semble search "authentication flow" https://github.com/MinishLab/model2vec --content all`
+* ALWAYS use `semble` to discover related code. Usage `semble find-related src/auth.py 42 ./my-project --content all`
+* ONLY use `rg` / `glob` / `read` when you need exhaustive literal matches or confirmation of an exact string
+* In doubt, use `semble` first, then `rg` / `glob` / `read` to further narrow the search
